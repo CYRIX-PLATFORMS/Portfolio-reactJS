@@ -1,2 +1,6 @@
+Name: NKWI CYRIL AKINIMBOM
+Registration Number: FE21A281
+Course: CEF344_Client-Server Development
+
 # Portfolio-reactJS
-Building a portfolio web app with react framework.
+Project Title: Building a portfolio web app with react framework.
