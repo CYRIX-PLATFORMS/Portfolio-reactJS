@@ -1,4 +1,5 @@
 import React from "react";
+import './App.css'
 import './index.css'
 import Header from './components/header/Header'
 import Navbar from './components/navbar/Navbar'
@@ -14,15 +15,17 @@ import Footer from './components/footer/Footer'
 export const App = () => {
   return (
     <>
-      <Header></Header>
-      <Navbar></Navbar>
-      <Experience></Experience>
-      <Services></Services>
-      <Portfolio></Portfolio>
-      <Testimonial></Testimonial>
-      <Footer></Footer>
+      <Header/>
+      <Navbar/>
+      <Experience/>
+      <Services/>
+      <Portfolio/>
+      <Testimonial/>
+      <Footer/>
     </>
   );
 }
 
-export default App; //Always export the component as default
+
+export default App
+
