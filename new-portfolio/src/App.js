@@ -22,7 +22,7 @@ export const App = () => {
       <Portfolio/>
       <Testimonial/>
       <Contact/>
-      <Footer/>`
+      <Footer/>
 
     </>
   );
