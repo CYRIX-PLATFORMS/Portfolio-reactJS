@@ -16,7 +16,7 @@ export const Header = () => {
                 <CTA/> 
                 <HeaderSocial/>
                 <div className='my_image'>
-                    <img src={me} alt='my image'/>
+                    <img src={me} alt=''/>
                 </div>
                 <a href='#contact' className='scroll__down'>Scroll down</a>
             </div>
