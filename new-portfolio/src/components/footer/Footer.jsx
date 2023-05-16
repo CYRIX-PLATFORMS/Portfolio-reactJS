@@ -9,7 +9,7 @@ const Footer = () => {
     return (
       <div className="footer__container">
         <a href="#top" className="footer__logo">
-          Brown Alden
+          Nkwi Cyril
         </a>
 
         <ul className="permalinks">
@@ -29,7 +29,7 @@ const Footer = () => {
             <a href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="#testimonials">testimonials</a>
+            <a href="#testimonials">Testimonials</a>
           </li>
           <li>
             <a href="#contact">Contact</a>

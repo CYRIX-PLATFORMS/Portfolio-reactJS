@@ -10,8 +10,8 @@ export const Header = () => {
     <header>
       <div className="container header__container">
         <h5>Hello I'm</h5>
-        <h1>NKwi Cyril</h1>
-        <h5 className="text-light">Software Engineer </h5>
+        <h1>Nkwi Cyril</h1>
+        <h5 className="text-light">An Aspiring Software Engineer </h5>
         <CTA />
         <HeaderSocial />
         <div className="my_image">
