@@ -1,11 +1,11 @@
 import React from "react";
 import "./testimonial.css";
 import IMG from "../../assets/me.jpg";
-import AV1 from "../../assets/avat1.jpg";
-import AV2 from "../../assets/avat2.jpg";
-import AV3 from "../../assets/avat3.jpg";
-import AV4 from "../../assets/avat4.jpg";
-import AV5 from "../../assets/avat5.jpg";
+import AV1 from "../../assets/me.jpg";
+import AV2 from "../../assets/me.jpg";
+import AV3 from "../../assets/me.jpg";
+import AV4 from "../../assets/me.jpg";
+import AV5 from "../../assets/me.jpg";
 
 // import Swiper core and required modules
 import { Pagination, Navigation, Scrollbar, A11y } from 'swiper';

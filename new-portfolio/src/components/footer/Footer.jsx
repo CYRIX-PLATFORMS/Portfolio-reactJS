@@ -2,7 +2,7 @@ import React from 'react'
 import { BsLinkedin } from 'react-icons/bs';
 import {FaGithub} from 'react-icons/fa'
 import {FaFacebookF} from 'react-icons/fa'
-import { CgTwitter } from "react-icons/cg";
+import { BsTwitter } from 'react-icons/bs';
 
 import './footer.css'
 const Footer = () => {
@@ -47,12 +47,12 @@ const Footer = () => {
             <FaFacebookF />
           </a>
           <a href="https://twitter.com" target="blank">
-            <CgTwitter />
+            <BsTwitter />
           </a>
         </div>
 
         <div className="copyRight">
-            <h3>@copyright BD 2023</h3>
+            <h3>@copyright NCA 2023</h3>
         </div>
       </div>
     );
