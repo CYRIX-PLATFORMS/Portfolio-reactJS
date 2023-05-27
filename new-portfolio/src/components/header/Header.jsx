@@ -4,7 +4,7 @@ import "./CTA";
 import CTA from "./CTA";
 import me from "../../assets/me.jpg";
 import HeaderSocial from "./HeaderSocial";
-
+import { BiArrowToBottom } from "react-icons/bi";
 export const Header = () => {
   return (
     <header>
@@ -18,7 +18,7 @@ export const Header = () => {
           <img src={me} alt="" />
         </div>
         <a href="#contact" className="scroll__down">
-          Scroll down
+          <BiArrowToBottom></BiArrowToBottom>
         </a>
       </div>
     </header>

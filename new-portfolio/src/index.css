@@ -14,7 +14,7 @@
         /* // as root variable we can used it everywhere */
         --color-bg:#000; 
         --color-bg-variant:#2c2c6c;
-        --color-primary:#4db5ff;
+        --color-primary:#000;
         --color-primary-variant:rgba(77, 181, 255, 0.4);
         --color-white:#fff;
         --color-light:rgba(255, 255, 255, 0.6);
@@ -32,6 +32,10 @@
 
     ::-webkit-scrollbar {
         display:none
+    }
+
+    #root {
+        background-color: white;
     }
 
     body {
