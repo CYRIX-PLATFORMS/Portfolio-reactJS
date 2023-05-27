@@ -62,11 +62,8 @@ const Contact = () => {
             <BsTwitter className="contact__option__icon" />
             <h4>Twitter</h4>
             <h5>Profile</h5>
-            <a href="https://twitter.com/NkwiCyril">
-              Send me a tweet
-            </a>
-          </article>   
-
+            <a href="https://twitter.com/NkwiCyril">Send me a tweet</a>
+          </article>
         </div>
 
         <form ref={form} onSubmit={sendEmail}>
