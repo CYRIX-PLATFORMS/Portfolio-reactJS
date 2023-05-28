@@ -7,29 +7,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    background-color: black;
+    background-color: white;
+    border-radius: 2rem;
+    text-align: center;
+
 }
 
 .experience__container>div{
     background: black;
     padding: 2.4rem 5rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
+    border: 1px solid white;
     transition: var(--transition);
 }
 
-.experience__container > div:hover{
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-}
 
 .experience__container > div h3{
     text-align: center;
     margin-bottom: .5rem;
     color: white;
-    /* change made here */
 }
+
 
 .experience__content{
     display: grid;
@@ -37,7 +35,6 @@
     row-gap: 2rem; 
     margin-top: 1rem;
     color: white; 
-    /* change made here */
 }
 
 .experience__details{

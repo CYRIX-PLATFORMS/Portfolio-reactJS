@@ -81,7 +81,42 @@ export const Experience = () => {
               </div>
             </article>
           </div>
+          
         </div>
+        <div className="experience__backend">
+          <h3>School Experiences</h3>
+          <div className="experience__content">
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"></BsPatchCheckFill>
+              <div>
+                <h4>C programming</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"></BsPatchCheckFill>
+              <div>
+                <h4>C++</h4>
+                <small className="text-light">Basic</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"></BsPatchCheckFill>
+              <div>
+                <h4>Java</h4>
+                <small className="text-light">Basic</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"></BsPatchCheckFill>
+              <div>
+                <h4>MATLAB</h4>
+                <small className="text-light">Basic</small>
+              </div>
+            </article>
+
+          </div>
+          </div>
         <ListExperiences />
       </div>
     </section>
