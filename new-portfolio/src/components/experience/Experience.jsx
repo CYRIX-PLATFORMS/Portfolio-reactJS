@@ -81,15 +81,14 @@ export const Experience = () => {
               </div>
             </article>
           </div>
-          
         </div>
-        <div className="experience__backend">
+        <div className="experience__frontend">
           <h3>School Experiences</h3>
           <div className="experience__content">
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon"></BsPatchCheckFill>
               <div>
-                <h4>C programming</h4>
+                <h4>C</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
@@ -114,9 +113,41 @@ export const Experience = () => {
                 <small className="text-light">Basic</small>
               </div>
             </article>
-
           </div>
+        </div>
+        <div className="experience__frontend">
+          <h3>Trainings acquired</h3>
+          <div className="experience__content">
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"></BsPatchCheckFill>
+              <div>
+                <h4>Huawei Datacom</h4>
+                <small className="text-light">Associate</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"></BsPatchCheckFill>
+              <div>
+                <h4>NDG Unhatched Linux</h4>
+                <small className="text-light">Advanced</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"></BsPatchCheckFill>
+              <div>
+                <h4>FreeCodeCamp-Web Design</h4>
+                <small className="text-light">Advanced</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"></BsPatchCheckFill>
+              <div>
+                <h4>Social Media Marketing</h4>
+                <small className="text-light">Excellent</small>
+              </div>
+            </article>
           </div>
+        </div>
         <ListExperiences />
       </div>
     </section>
