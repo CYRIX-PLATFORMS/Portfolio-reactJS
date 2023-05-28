@@ -12,11 +12,11 @@ export const Header = () => {
         <h5>Hello I'm</h5>
         <h1>Nkwi Cyril</h1>
         <h5 className="text-light">An Aspiring Software Engineer </h5>
-        <CTA />
         <HeaderSocial />
         <div className="my_image">
-          <img src={me} alt="" />
+          <img src={me} alt="NkwiCyrilAkinimbom" />
         </div>
+        <CTA />
         <a href="#contact" className="scroll__down">
           <BiArrowToBottom></BiArrowToBottom>
         </a>

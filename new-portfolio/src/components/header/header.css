@@ -11,13 +11,18 @@ header {
     height: 100%;
     text-align: center;
     position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.header__container h5, .header__container h2 {
+    text-align: center;
 }
 
 .cta {
-    margin-top: 2.5rem;
-    display: flex;
     gap: 1.2rem;
-    justify-content: center;
+    display: block;
 }
 
 .btn {
@@ -32,7 +37,7 @@ header {
 
 .header__social {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 0.8rem;
     position: absolute;
@@ -42,8 +47,9 @@ header {
 }
 
 .header__social a:hover {
-    font-size: 55px;
-    color: rgb(70, 69, 69);
+    font-size: 50px;
+    color: rgb(28, 27, 27);
+    
 }
 
 .header__social::after {
@@ -58,14 +64,19 @@ header {
 .my_image {
     width: 22rem;
     height: 35rem;
+    object-fit: cover;
     position: absolute;
     left: calc(50% - 11rem);
-    margin-top: 4rem;
+    margin-top: 11rem;
     overflow: hidden;
     padding: 0rem 1.5rem 1.5rem 1.5rem;
     margin-bottom: 5rem;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
     
+}
+
+img {
+    box-shadow: 0px 5px 5px rgba(0,0,0,.5);
 }
 
 .scroll__down {
