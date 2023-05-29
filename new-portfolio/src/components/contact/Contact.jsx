@@ -4,40 +4,44 @@ import { MdOutlineEmail } from "react-icons/md";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
+import { BsSend } from "react-icons/bs";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 
-const Contact = () => {
+export const Contact = () => {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm(
-      "service_5vuauza",
-      "template_fdnnl56",
-      form.current,
-      "EmSdUNQzQuxkUqGWx"
-    );
-    e.target.reset().then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+
+    emailjs
+      .sendForm(
+        "service_bb669nb",
+        "template_w1ytrov",
+        form.current,
+        "BKe4NRI_MxGwXXBqT"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
     <section id="contact">
       <h5 className="h5">Get in touch</h5>
-      <h2 >Contact me</h2>
+      <h2>Contact me</h2>
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
             <MdOutlineEmail className="contact__option__icon" />
             <h4>Email</h4>
             <h5>akinimbomnkwi@gmail.com</h5>
-            <a href="mailto:akinimbomnkwi@gmail.com">Send a message</a>
+            <a href="akinimbomnkwi@gmail.com">Send a message</a>
           </article>
 
           <article className="contact__option">
@@ -67,7 +71,13 @@ const Contact = () => {
         </div>
 
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="full name" required />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="full name"
+            required
+          />
           <input type="email" name="email" placeholder="your email" required />
           <textarea
             name="message"
@@ -78,7 +88,7 @@ const Contact = () => {
             required
           ></textarea>
           <button type="submit" className="btn btn-primary">
-            Send message
+            Send message <BsSend color="white" fontSize={15}></BsSend>
           </button>
         </form>
       </div>
