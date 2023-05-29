@@ -2,88 +2,63 @@ import React from "react";
 import "./portfolio.css";
 import img1 from "../../assets/code symbol.jpg";
 import img2 from "../../assets/Computer servers.jpg";
-import img3 from "../../assets/developer-logo-2.png";
 import img5 from "../../assets/java.png";
 import img6 from "../../assets/javascript-3.jpg";
 import img7 from "../../assets/js1.png";
-import img8 from "../../assets/js2.png";
-import img9 from "../../assets/javascript-3.jpg";
 import ListPortfolio from "./listPortfolio";
 
 export const Portfolio = () => {
   const portfolioContent = [
     {
-      image : img1,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
+      image: img1,
+      github: "https://github.com/CYRIX-PLATFORMS/NBFC-management-site",
+      demo: "",
       id: 1,
-      title:'Project 1'
+      title: "Team Management Site",
     },
     {
-      image : img2,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
+      image: img1,
+      github: "https://github.com/CYRIX-PLATFORMS/true-car",
+      demo: "",
       id: 2,
-      title:'Project 2'
+      title: "Car Sale Website",
     },
     {
-      image : img3,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
+      image: img1,
+      github: "https://github.com/CYRIX-PLATFORMS/portfolioRepo",
+      demo: "",
       id: 4,
-      title:'Project 3'
+      title: "Client Portfolio",
     },
     {
-      image : img5,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
+      image: img1,
+      github: "https://github.com/CYRIX-PLATFORMS/Landing-Page-project",
+      demo: "",
       id: 5,
-      title:'Project 4'
+      title: "Oblivion Design",
     },
     {
-      image : img6,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
+      image: img1,
+      github: "https://github.com/CYRIX-PLATFORMS/HTML-CSS-JS",
+      demo: "",
       id: 6,
-      title:'Project 4'
+      title: "Minimal HTML-CSS-JS ",
     },
-      {
-      image : img7,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
+    {
+      image: img1,
+      github: "https://github.com/CYRIX-PLATFORMS/SMCON-website-design",
+      demo: "",
       id: 7,
-      title:'Project 5'
+      title: "Silicon Mountain Site",
     },
-    {
-      image : img8,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 8,
-      title:'Project 6'
-    },
-    {
-      image : img9,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 9,
-      title:'Project 7'
-    },
-    {
-      image : img1,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 10,
-      title:'Project 8'
-    },
-  ]
+  ];
   return (
     <section id="portfolio">
-      <h5>My recent work</h5>
+      <h5>My recent works</h5>
       <h2>Portfolio</h2>
-<ListPortfolio/>  
+      <ListPortfolio />
       <div className="container portfolio__container">
-      {
-        portfolioContent.map((content, id) =>{
+        {portfolioContent.map((content, id) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item__image">
@@ -93,7 +68,7 @@ export const Portfolio = () => {
               <div className="portfolio__item__cta">
                 <a
                   href={content.github}
-                  className="btn"
+                  className="btn btn-primary"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -102,7 +77,6 @@ export const Portfolio = () => {
                 <a
                   href={content.demo}
                   className="btn btn-primary"
-                  target="blank"
                   rel="noreferrer"
                 >
                   Live Demo
@@ -110,10 +84,7 @@ export const Portfolio = () => {
               </div>
             </article>
           );
-        }
-        
-        )
-      }
+        })}
       </div>
     </section>
   );

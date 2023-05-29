@@ -98,9 +98,9 @@
     }
 
     .btn:hover {
-        background:var(--color-white);
+        background: rgb(156, 156, 156);
         color: var(--color-bg);
-        border-color: transparent;
+        border-color: black;
     }
 
     .btn-primary {
