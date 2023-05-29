@@ -1,5 +1,6 @@
 #testimonial {
     background-color: #e7e4e4;
+    padding-top: 50px;
 }
 #testimonial h5 {
     font-size: 20px;
@@ -51,10 +52,15 @@
         width: 4rem;
     }
     
-    
 }
 
 @media only screen and (max-width: 600px) {
+    .container.testimonials__container{
+        width: 40%;
+    }
+    .client__avatar{
+        width: 4rem;
+    }
     .client__review{
         width: var(--container--width-sm)
     }

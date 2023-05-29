@@ -64,7 +64,7 @@ export const Testimonial = () => {
   ];
   return (
     <section id="testimonial">
-      <h5>Review from client</h5>
+      <h5>Review From Clients</h5>
       <h2>Testimonials</h2>
 
       <Swiper className="container testimonials__container"

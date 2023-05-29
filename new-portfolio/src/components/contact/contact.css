@@ -1,10 +1,25 @@
+#contact {
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
 
+.h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.h2 {
+    font-size: 2rem;
+}
+.contact__option h5 {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 200;
+}
 .container.contact__container{
-    width:58%;
-    display:grid;
+    width: 58%;
+    display: grid;
     grid-template-columns: 30% 58%;
-    gap:12%;
-    font-family: 'Poppins' sans-serif;
+    gap: 12%;
 }
 
 .contact__options{
@@ -14,7 +29,7 @@
 }
 
 .contact__option{
-    background:var(--color-bg-variant) ;
+    background: black;
     padding:1.2rem;
     border-radius: 1.2rem;
     text-align: center;
@@ -23,13 +38,12 @@
 }
 
 .contact__option:hover{
-    background: transparent;
-    border-color: var(--color-primary-variant);
+    background: #232222;
 
 }
 
 .contact__option__icon{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: .5rem;
 }
 
@@ -37,6 +51,8 @@
     margin-top: .7rem;
     display: inline-block;
     font-size: .8rem;
+    font-size: 20px;
+    color: white;
 }
 
 form{
@@ -50,9 +66,10 @@ input, textarea{
     padding: 1.5rem;
     border-radius: .5rem;
     background: transparent;
-    border: 1px solid var(--color-primary-variant);
+    border: 2px solid black;
     resize: none;
-    color: var(--color-white);
+    color: rgb(57, 55, 55);
+    font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (max-width:1024px) {
