@@ -24,42 +24,42 @@ export const Testimonial = () => {
       testimonial:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
       avatar: IMG,
-      Cname: "Client 1",
+      Cname: "Ajim",
     },
     {
       id: 2,
       testimonial:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
       avatar: AV1,
-      Cname: "Client 2",
+      Cname: "Afu",
     },
     {
       id: 3,
       testimonial:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
       avatar: AV2,
-      Cname: "Client 3",
+      Cname: "Akini",
     },
     {
       id: 4,
       testimonial:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
       avatar: AV3,
-      Cname: "Client 4",
+      Cname: "Ankea",
     },
     {
       id: 5,
       testimonial:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
       avatar: AV5,
-      Cname: "Client 5",
+      Cname: "Bemsi",
     },
     {
       id: 6,
       testimonial:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
       avatar: AV4,
-      Cname: "Client 6",
+      Cname: "Nengjom",
     },
   ];
   return (
@@ -79,7 +79,7 @@ export const Testimonial = () => {
               <div className="client__avatar">
                 <img src={testi.avatar} alt="client avatar" />
               </div>
-              <h5 className="client__name"> {testi.Cname} </h5>
+              <h2 className="client__name"> {testi.Cname} </h2>
               <small className="client__review"> {testi.testimonial} </small>
             </SwiperSlide>
           );
