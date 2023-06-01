@@ -11,7 +11,9 @@ const ListPortfolio = () => {
     setData(response.data.project);
   };
   console.log(data);
-  return <div></div>;
+  return <div>
+    
+  </div>;
 };
 
 export default ListPortfolio;
