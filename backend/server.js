@@ -24,6 +24,6 @@ mongoose
   .then(() => {
     app.listen(PORT, () => {
       console.log(`Server Running on port ${PORT}`);
-    });
+    })
   })
   .catch((err) => console.log(err));
