@@ -14,7 +14,7 @@ export const Header = () => {
         <h5 className="text-light">An Aspiring Software Engineer </h5>
         <HeaderSocial />
         <div className="my_image">
-          <img src={me } alt="NkwiCyrilAkinimbom" />
+          <img src={me} alt="NkwiCyrilAkinimbom" />
         </div>
         <CTA />
         <a href="#contact" className="scroll__down">
