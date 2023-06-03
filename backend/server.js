@@ -1,15 +1,20 @@
+const dotenv = require("dotenv").config();
 const express = require("express");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+
 const app = express();
 
-// Expose an API endpoint to get the portfolio of projects
-app.get("/projects", (req, res) => {
-  const projects = collection.find().toArray();
-  res.json(projects);
+//Middlewares
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+// routes
+app.get("/", (req, res) => {
+  res.send("Home Page");
 });
-
-// Start the server
-app.listen(3000);
-
 
 const PORT = process.env.PORT || 5000;
 
