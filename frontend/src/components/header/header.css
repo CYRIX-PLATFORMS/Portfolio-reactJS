@@ -1,0 +1,114 @@
+header {
+    height: 110vh;
+    /*vh correspond to viewport height*/
+    padding-top: 7rem;
+    overflow: hidden;
+    background-color: #fcfcfc;
+    color:black;
+    padding-bottom: 2px;
+}
+
+.header__container {
+    height: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.header__container h5, .header__container h2 {
+    text-align: center;
+}
+
+.cta {
+    gap: 1.2rem;
+    display: block;
+}
+
+.btn {
+    color: black;
+    border: none;
+}
+
+.btn-primary {
+    background-color: black;
+    color: #fcfcfc;
+}
+
+.header__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    font-size: 30px;
+}
+
+.header__social a:hover {
+    font-size: 50px;
+    color: rgb(28, 27, 27);
+    
+}
+
+.header__social::after {
+    /*the after tag help us to draw the vertical line we have
+    after the social icons*/
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+.my_image {
+    width: 22rem;
+    height: 35rem;
+    object-fit: cover;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 11rem;
+    overflow: hidden;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+
+}
+
+img {
+    box-shadow: 0px 5px 5px rgba(0,0,0,.5);
+    border-radius: 5px;
+}
+
+.scroll__down {
+    position: absolute;
+    right: -2rem;
+    bottom: 5rem;
+    font-size: 5rem;
+    color: black;
+}
+
+.scroll__down:hover {
+    font-size: 6.5rem;
+    color: rgb(70, 69, 69);
+}
+
+/*This is what we call media query: here we define the css that will be apply for a
+    specific screen*/
+@media screen and(max-width:1024px) {
+    header {
+        height: 68vh;
+        
+    }
+
+}
+
+@media screen and(max-width:600px) {
+    header {
+        height: 100vh;
+    }
+    .header__social,
+    .scroll__down {
+        display: none;
+    }
+}
+    
