@@ -1,5 +1,6 @@
-const {portfolioModel} = require("../model/portfolio_model.js");
-const {testimonialModel} = require("../model/testimonial_model.js");
+const {portfolioModel} = require("../model/portfolio_model");
+const {testimonialModel} = require("../model/testimonial_model");
+
 exports.portfolioAppRoute = async(req, res) => {
     try {
         items = await portfolioModel.find({})
@@ -18,7 +19,7 @@ exports.testimonialAppRoute = async(req, res) => {
         items = await testimonialModel.find({})
 
         return res.status(200).send({
-            message: "Success",
+            message: "Successful",
             data: items
         })
     } catch (error) {

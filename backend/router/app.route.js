@@ -1,6 +1,5 @@
 const controller = require("../controller/app.controller");
-const express =  require("express");
-const router = express.Router();
+const router = require ("express").Router();
 
 router.get('/portfolio', controller.portfolioAppRoute);
 router.get('/testimonial', controller.testimonialAppRoute);

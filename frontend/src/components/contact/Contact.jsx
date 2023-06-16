@@ -87,7 +87,7 @@ export const Contact = () => {
             placeholder="Type your message here"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary" id="button">
+          <button type="submit" className="btn btn-primary">
             Send message <BsSend color="white" fontSize={15}></BsSend>
           </button>
         </form>

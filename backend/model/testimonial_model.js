@@ -1,12 +1,14 @@
 const mongoose = require("mongoose");
-
-const testimonialModel = new mongoose.model("testimonials", mongoose.Schema({
+const testimonialModel = new mongoose.model(
+  "testimonials",
+  mongoose.Schema({
     _id: String,
     avatar: String,
     Cname: String,
     testimonial: String,
-}))
+  })
+);
 
-module.export = {
-    testimonialModel
+module.exports = {
+  testimonialModel,
 }
