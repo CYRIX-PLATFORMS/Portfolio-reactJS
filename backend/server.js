@@ -22,7 +22,7 @@ mongoose
   })
   .then(() => {
     app.listen(PORT, () => {
-      console.log("Connection to MongoDB Succesful!");
+      console.log("Connection to MongoDB Successful!");
       console.log(`Server Running on port ${PORT}`);
     })
   })
