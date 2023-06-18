@@ -31,6 +31,26 @@ export const Contact = () => {
       );
   };
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("btn2");
+    btn.addEventListener("click", () => {
+      const nameField = document.getElementById("name");
+      const emailField = document.getElementById("email");
+      const textField = document.getElementById("message");
+
+      var name = nameField.value;
+      var email = emailField.value;
+      var text = textField.value;
+
+      if (name === "" || email === "" || text === "") {
+        alert("Please fill out the fields.");
+      } else {
+        alert(`Thanks for the message ${name}. Will be replying you soon.`);
+      }
+    });
+
+  });
+
   return (
     <section id="contact">
       <h5 className="h5">Get in touch</h5>
@@ -78,7 +98,7 @@ export const Contact = () => {
             placeholder="full name"
             required
           />
-          <input type="email" name="email" placeholder="your email" required />
+          <input type="email" name="email" placeholder="your email" id="email" required />
           <textarea
             name="message"
             id="message"
@@ -87,7 +107,7 @@ export const Contact = () => {
             placeholder="Type your message here"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary" id="btn2">
             Send message <BsSend color="white" fontSize={15}></BsSend>
           </button>
         </form>
