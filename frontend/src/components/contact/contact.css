@@ -72,6 +72,10 @@ input, textarea{
     font-family: 'Poppins', sans-serif;
 }
 
+.inline {
+    display: flex;
+}
+
 @media screen and (max-width:1024px) {
     .container.contact__container{
         grid-template-columns: 1fr;
