@@ -5,6 +5,7 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsSend } from "react-icons/bs";
+import { MdDelete } from "react-icons/md";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 
@@ -32,12 +33,13 @@ export const Contact = () => {
   };
 
   document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.getElementById("btn2");
-    btn.addEventListener("click", () => {
-      const nameField = document.getElementById("name");
-      const emailField = document.getElementById("email");
-      const textField = document.getElementById("message");
+    const btn = document.getElementById("btn1");
+    const clear = document.getElementById("btn2");
+    const nameField = document.getElementById("name");
+    const emailField = document.getElementById("email");
+    const textField = document.getElementById("message");
 
+    btn.addEventListener("click", () => {
       var name = nameField.value;
       var email = emailField.value;
       var text = textField.value;
@@ -49,6 +51,11 @@ export const Contact = () => {
       }
     });
 
+    clear.addEventListener("click", () => {
+      nameField.value = "";
+      emailField.value = "";
+      textField.value = "";
+    });
   });
 
   return (
@@ -98,7 +105,13 @@ export const Contact = () => {
             placeholder="full name"
             required
           />
-          <input type="email" name="email" placeholder="your email" id="email" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="your email"
+            id="email"
+            required
+          />
           <textarea
             name="message"
             id="message"
@@ -107,9 +120,15 @@ export const Contact = () => {
             placeholder="Type your message here"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary" id="btn2">
-            Send message <BsSend color="white" fontSize={15}></BsSend>
-          </button>
+
+          <div className="inline">
+            <button type="submit" className="btn btn-primary" id="btn1">
+              Send message <BsSend color="white" fontSize={15}></BsSend>
+            </button>
+            <button type="submit" className="btn btn-primary" id="btn2">
+              Clear <MdDelete color="white" fontSize={15}></MdDelete>
+            </button>
+          </div>
         </form>
       </div>
     </section>
