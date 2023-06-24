@@ -5,11 +5,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
 
-app.use(cors()); //using cors
 
-app.use(express.json()) //middleware to parse json data
-
-app.use("/api", require("./router/app.route"))
 
 const PORT = process.env.PORT || 5000;
 
@@ -26,4 +22,10 @@ mongoose
     })
   })
   .catch((err) => console.log(err));
+
+app.use(cors()); //using cors
+
+app.use(express.json()) //middleware to parse json data
+
+app.use("/api", require("./router/app.route"))
 
