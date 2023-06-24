@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import "./portfolio.css";
-import axios from "axios";
+// import axios from "axios";
 import img1 from "../../assets/code symbol.jpg";
+// import ListPortfolio from "../portfolio/listPortfolio"
 
 export const Portfolio = () => {
   // const [data, setData] = useState([]);
@@ -72,6 +73,7 @@ export const Portfolio = () => {
       <h5>My recent works</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
+      {/* <ListPortfolio></ListPortfolio> */}
       {portfolioContent.map((content, id) => {
           return (
             <article key={id} className="portfolio__item">
